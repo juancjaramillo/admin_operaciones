@@ -1,0 +1,75 @@
+/*Basic Styles*/
+
+* {margin: 0px; padding: 0px;}
+
+body {
+  background: #333;
+}
+
+.header {
+  background: rgba(0,0,0,0.8);
+  height: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.header a {
+  color: #fff;
+  font: 200 11px/30px Helvetica, Verdana, sans-serif;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+/*List Styles*/
+ul {
+  position: relative;
+  width: 800px;
+  height: 510px;
+  margin: 50px auto;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+  height: 200px;
+  padding: 20px;
+  background: #252525;
+  color: #eee;
+  z-index: 2;
+  overflow: auto;
+}
+
+ul li:nth-child(odd) {
+  background: #FE0000;
+}
+
+/*Images*/
+img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/*Type*/
+h1 {
+  text-align: center;
+  color: rgba(0,0,0,0.8);
+  margin-top: 25px;
+  font: bold 80px Helvetica, Arila, sans-serif;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.1);
+}
+
+h2 {
+  margin-top: 25px;
+  font: bold 30px Helvetica, Arila, sans-serif;
+}
+
+p {
+  font: 13px/1.5 Georgia, Times, serif;
+  color: #757575;
+}

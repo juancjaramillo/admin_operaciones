@@ -1,0 +1,124 @@
+<?
+include(dirname(__FILE__) . "/../application.php");
+
+
+///JFMC lo comentarie porque hay vehiculos que realizan dos descargues en un mismo moviemiento y es normal en la operación 
+
+////por movimiento
+// $idMovimientos = array(0);
+// $qid = $db->sql_query("select pes.id_movimiento,total from 
+	// (SELECT id_peso, sum(porcentaje) as total
+	// FROM rec.movimientos_pesos
+	// GROUP BY id_peso) acum
+	// left join rec.movimientos_pesos pes on acum.id_peso=pes.id_peso 
+// where total!=100
+// ");
+
+// while($query = $db->sql_fetchrow($qid))
+// {
+	// if($query["total"] > 100)
+		// $idMovimientos[$query["id_movimiento"]] = $query;
+// }
+
+// $centros = $nombresCentros = array();
+
+// $qid = $db->sql_query("SELECT mov.id, mov.inicio, 'Ruta: '||i.codigo||' / Vehículo: '||v.codigo||' ('||v.placa||')' as movimiento, a.id_centro, c.centro as n_centro
+	// FROM rec.movimientos mov
+	// LEFT JOIN vehiculos v ON v.id = mov.id_vehiculo
+	// LEFT JOIN micros i ON i.id=mov.id_micro
+	// LEFT JOIN ases a ON a.id = i.id_ase
+	// LEFT JOIN centros c ON c.id = a.id_centro
+	// WHERE inicio::date >= '2013-03-01' and mov.id IN (".implode(",",array_keys($idMovimientos)).")
+	// ORDER BY mov.inicio, i.codigo");
+// while($mov = $db->sql_fetchrow($qid))
+// {
+	// $centros[$mov["id_centro"]][$mov["inicio"]][] = "- ".$mov["movimiento"].", tiene como peso relacionado un total de ".$idMovimientos[$mov["id"]]["total"];
+	// $nombresCentros[$mov["id_centro"]] = $mov["n_centro"];
+// }
+
+// foreach($centros as $idCentro => $fechas)
+// {
+	// $mensaje = "Buen Día\n\nLa siguiente es la lista de movimientos en los que se ha detectado que el porcentaje de pesos relacionados es mayor de 100%:\n\n";
+	// $totalErrores = 0;
+	// foreach($fechas as $dia => $dx)
+	// {
+		// $mensaje.="Fecha: ".$dia."\n".implode("\n",$dx)."\n\n";
+		// $totalErrores+=count($dx);
+	// }
+	// $mensaje.="\n\nTotal errores encontrados: ".$totalErrores.".\n\nCordialmente,\nAIDA";
+	// $asunto = "Error en pesos (vista por movimiento), ".$nombresCentros[$idCentro];
+
+	// $qid = $db->sql_query("SELECT distinct(email) as mail 
+		// FROM personas_centros pc
+		// LEFT JOIN personas p ON p.id=pc.id_persona
+		// WHERE email IS NOT NULL AND pc.id_centro='".$idCentro."' AND nivel_acceso in (1, 2, 6, 8, 14)");
+	// while($email = $db->sql_fetchrow($qid))
+	// {
+		// mail($email["mail"], $asunto,$mensaje);
+	// }
+// }
+
+
+//por el registro de peso
+$idPesos = array(0);
+$centros = $nombresCentros = array();
+
+$qid = $db->sql_query("select pes.id_movimiento,total from 
+	(SELECT id_peso, sum(porcentaje) as total
+	FROM rec.movimientos_pesos
+	GROUP BY id_peso) acum
+	left join rec.movimientos_pesos pes on acum.id_peso=pes.id_peso 
+where total!=100");
+
+$consulta = "SELECT * FROM (
+		SELECT mp.id_peso, sum(mp.porcentaje) as total
+		FROM rec.movimientos_pesos mp
+		LEFT JOIN rec.pesos p  ON p.id=mp.id_peso
+		WHERE p.fecha_entrada::date>'2013-06-01'
+		GROUP BY id_peso) AS foo
+	WHERE total != 100";
+$qid = $db->sql_query($consulta);
+while($query = $db->sql_fetchrow())
+{
+	if($query["total"] != 100)
+		$idPesos[$query["id_peso"]] = $query;
+}
+
+$qid = $db->sql_query("SELECT to_char(p.fecha_entrada,'YYYY-MM-DD') as fecha, p.id, tiquete_entrada, 'Vehículo: '||v2.codigo||' ('||v2.placa||') / Fecha: ' || p.fecha_entrada ||' / Descargue: ' || l.nombre as dato_peso, c.id as id_centro, c.centro as n_centro
+    FROM rec.pesos p 
+    LEFT JOIN vehiculos v2 ON v2.id = p.id_vehiculo
+    LEFT JOIN lugares_descargue l ON l.id=p.id_lugar_descargue
+    LEFT JOIN centros c ON c.id=l.id_centro
+	  WHERE p.id IN (".implode(",",array_keys($idPesos)).")
+		ORDER BY p.fecha_entrada");
+while($query = $db->sql_fetchrow($qid))
+{
+	$dp = $query["dato_peso"];
+	if($query["tiquete_entrada"] != "" ) $dp.= " / Tiquete: ".$query["tiquete_entrada"];
+	$centros[$query["id_centro"]][$query["fecha"]][] = "- ".$dp.", tiene un total de ".$idPesos[$query["id"]]["total"]."%";
+	$nombresCentros[$query["id_centro"]] = $query["n_centro"];
+}
+
+foreach($centros as $idCentro => $fechas)
+{
+	$mensaje = "Buen Día\n\nLa siguiente es la lista de registros de pesos en los que se ha detectado que el porcentaje diferente al 100%:\n\n";
+	$totalErrores = 0;
+	foreach($fechas as $dia => $dx)
+	{
+		$mensaje.="Fecha: ".$dia."\n".implode("\n",$dx)."\n\n";
+		$totalErrores+=count($dx);
+	}
+	$mensaje.="\n\nTotal errores encontrados: ".$totalErrores.".\n\nCordialmente,\nAIDA";
+	$asunto = "Error en pesos (vista por registro de peso), ".$nombresCentros[$idCentro];
+
+	$qid = $db->sql_query("SELECT distinct(email) as mail 
+		FROM personas_centros pc
+		LEFT JOIN personas p ON p.id=pc.id_persona
+		WHERE email IS NOT NULL AND pc.id_centro='".$idCentro."' AND nivel_acceso in (1, 2, 6, 8, 14)");
+	while($email = $db->sql_fetchrow($qid))
+	{
+		mail($email["mail"], $asunto,$mensaje);
+	}
+}
+
+?>

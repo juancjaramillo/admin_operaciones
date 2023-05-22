@@ -1,0 +1,2548 @@
+/*@charset "utf-8";*/
+/* CSS Document */
+
+body
+{
+  margin: 1px;
+  font: 10px "Trebuchet MS", sans-serif;
+
+}
+
+.CampoTitulo
+{
+    border-width: 0px;
+    border-style: none;
+    font-size: 10pt;
+    font-style: normal;
+    text-decoration: none;
+    font-family: Calibri, sans-serif;
+    text-align: general;    
+    ime-mode: auto;
+    text-indent: 5pt;
+    padding-right: 3pt;
+	height:23px;
+	width:auto;
+
+}
+
+.CampoTexto
+{
+    color: black;
+    font-size: 10pt;
+    font-style: normal;
+    text-decoration: none;
+    font-family: Calibri, sans-serif;
+    text-align: general;
+    vertical-align: bottom;
+    white-space: nowrap;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+	border-color:#72AA07;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 1px;
+   
+}
+
+.DynamicComboBox
+{
+	vertical-align: middle;
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 7pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  7pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.Attribute
+{
+	vertical-align: middle;
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 7pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  7pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.ReadonlyAttribute
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: none;
+	ime-mode: auto;
+	font-variant: normal;
+	font: normal normal  9pt Verdana, Arial;
+	
+}
+
+.FreeStyleGrid
+{
+	border-width: 0px;
+	border-style: none;
+	
+}
+
+.FreeStyleGridUniform
+{
+	border-width: 0px;
+	background-color: rgb(219, 236, 252);
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 8.25pt;
+	font-family: "Verdana";
+	
+}
+
+.FreeStyleGridOdd
+{
+	border-width: 0px;
+	background-color: rgb(255, 255, 255);
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 8.25pt;
+	font-family: "Verdana";
+	
+}
+
+.FreeStyleGridEven
+{
+	border-width: 0px;
+	background-color: #DCE7E2;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 9px;
+	font-family: "Verdana";
+	
+}
+.FreeStyleGridEvenB
+{
+	border-width: 0px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 9px;
+	font-family: "Verdana";
+	
+}
+
+.Grid
+{
+	border-width: 0px;
+	border-style: none;
+	border-top-color: Silver;
+	border-right-color: Silver;
+	border-bottom-color: Silver;
+	border-left-color: Silver;
+	border-color: Silver;
+	margin-left: 4px;
+	
+}
+
+.GridUniform
+{
+	border-width: 0px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 8pt;
+	font-family: Arial, Verdana;
+	background-color: rgb(219,236,252);
+	font: normal  normal 8pt Arial, Verdana;
+	
+}
+
+.GridOdd
+{
+	border-width: 0px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 8pt;
+	font-family: Arial, Verdana;
+	background-color: rgb(227,241,253);
+	font: normal  normal 8pt Arial, Verdana;
+	
+}
+
+.GridEven
+{
+	border-width: 0px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 8pt;
+	font-family: Arial, Verdana;
+	background-color: White;
+	font: normal  normal 8pt Arial, Verdana;
+	
+}
+
+.GridUniformTitle
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial, Verdana;
+	background-color: rgb(219,236,252);
+	color: rgb(255,255,255);
+	font: normal  bold 8pt Arial, Verdana;
+	
+}
+
+.GridTitle
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial, Verdana;
+	background-color: rgb(70, 130, 180);
+	color: rgb(255,255,255);
+	font: normal  bold 8pt Arial, Verdana;
+	
+}
+
+.Table
+{
+	border-width: 0px 1px 1px 1px;
+	border-color:#FFFBF0;
+	border: 0.8px outset;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	margin: 0pt 0pt 0pt 0pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	background-color: F9F9F9;
+}
+
+.Table1
+{
+	border-width: 0px 1px 1px 1px;
+	text-decoration: none;
+	margin: 0pt 0pt 0pt 0pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: #F0F0F0;
+	border-bottom:solid; 
+	border-left:solid; 
+	border-right:solid;
+	border-width:1px; 
+	border-color: #999999; 
+	font-size:12px; 
+	border-top:none;
+	border-collapse:collapse;
+
+}
+
+
+.Image
+{
+	border-width: 0px;
+	border-style: none;
+	vertical-align: middle;
+
+}
+
+.Button1
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7pt;
+	font-family: Verdana, Arial;
+	color: #000;
+	border-width: 1px;
+	border-style:  intset;
+	background-image:url(../../images/bt.gif);
+	height: 25px;
+	width: 100px;
+	vertical-align: middle;
+	text-indent: 0pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	
+}
+
+.Button_busq
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7pt;
+	font-family: Verdana, Arial;
+	color: rgb(0, 73, 148);
+	background-color: rgb(237,237,237);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(search.png);
+	height: 22px;
+	width:  22px;
+	vertical-align: middle;
+	text-indent: 0pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	
+}
+
+.Hyperlink
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: underline;
+	font-weight: normal;
+	font-size: 8.25pt;
+	font-family: "Verdana";
+	
+}
+
+.TextBlock
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	ime-mode: auto;
+	padding-right: 3pt;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.SpecialButtons
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7.8pt;
+	font-family: "Verdana";
+	color: rgb(8, 93, 148);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(boton_peq.gif);
+	height: 25px;
+	width: 100px;
+	vertical-align: bottom;
+	text-indent: 0pt;
+	margin: 3pt 3pt 0pt 3pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: rgb(237,237,237);
+	
+}
+
+.BtnFirst
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7.8pt;
+	font-family: "Verdana";
+	color: rgb(8, 93, 148);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(botonFirst.gif);
+	height: 20px;
+	width: 20px;
+	vertical-align: bottom;
+	text-indent: 0pt;
+	margin: 3pt 3pt 0pt 3pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: rgb(237,237,237);
+	
+}
+
+.BtnNext
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7.8pt;
+	font-family: "Verdana";
+	color: rgb(8, 93, 148);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(botonNext.gif);
+	height: 20px;
+	width: 20px;
+	vertical-align: bottom;
+	text-indent: 0pt;
+	margin: 3pt 3pt 0pt 3pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: rgb(237,237,237);
+	
+}
+
+.BtnPrevious
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7.8pt;
+	font-family: "Verdana";
+	color: rgb(8, 93, 148);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(botonPrevious.gif);
+	height: 20px;
+	width: 20px;
+	vertical-align: bottom;
+	text-indent: 0pt;
+	margin: 3pt 3pt 0pt 3pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: rgb(237,237,237);
+	
+}
+
+.BtnLast
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7.8pt;
+	font-family: "Verdana";
+	color: rgb(8, 93, 148);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(botonLast.gif);
+	height: 20px;
+	width: 20px;
+	vertical-align: bottom;
+	text-indent: 0pt;
+	margin: 3pt 3pt 0pt 3pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: rgb(237,237,237);
+	
+}
+
+.BtnSelect
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7.8pt;
+	font-family: "Verdana";
+	color: rgb(8, 93, 148);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(boton_peq.gif);
+	height: 25px;
+	width: 100px;
+	vertical-align: bottom;
+	text-indent: 0pt;
+	margin: 3pt 3pt 0pt 3pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: rgb(237,237,237);
+	
+}
+
+.BtnGet
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7.8pt;
+	font-family: "Verdana";
+	color: rgb(8, 93, 148);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(boton_peq.gif);
+	height: 25px;
+	width: 100px;
+	vertical-align: bottom;
+	text-indent: 0pt;
+	margin: 3pt 3pt 0pt 3pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: rgb(237,237,237);
+	
+}
+
+.BtnEnter
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7.8pt;
+	font-family: "Verdana";
+	color: rgb(8, 204,5);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(btn_Enter.gif);
+	height: 25px;
+	width: 82px;
+	vertical-align: bottom;
+	text-indent: 0pt;
+	margin: 3pt 3pt 0pt 3pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: rgb(237,237,237);
+	
+}
+
+.BtnCheck
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7.8pt;
+	font-family: "Verdana";
+	color: rgb(8, 93, 148);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(boton_peq.gif);
+	height: 25px;
+	width: 100px;
+	vertical-align: bottom;
+	text-indent: 0pt;
+	margin: 3pt 3pt 0pt 3pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: White;
+	
+}
+
+.BtnCancel
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7.8pt;
+	font-family: "Verdana";
+	color: rgb(176, 76, 76);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(boton_peq.gif);
+	height: 25px;
+	width: 82px;
+	vertical-align: bottom;
+	text-indent: 0pt;
+	margin: 3pt 3pt 0pt 3pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: rgb(237,237,237);
+	
+}
+
+.BtnDelete
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7.8pt;
+	font-family: "Verdana";
+	color: rgb(8, 93, 148);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(boton_peq.gif);
+	height: 25px;
+	width: 100px;
+	vertical-align: bottom;
+	text-indent: 0pt;
+	margin: 3pt 3pt 0pt 3pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: rgb(237,237,237);
+	
+}
+
+.BtnHelp
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7.8pt;
+	font-family: "Verdana";
+	color: rgb(8, 93, 148);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(btn_Ayuda.gif);
+	height: 25px;
+	width: 82px;
+	vertical-align: bottom;
+	text-indent: 0pt;
+	margin: 3pt 3pt 0pt 3pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: rgb(237,237,237);
+	
+}
+
+.TableGrid
+{
+	background-color: rgb(219, 236, 252);
+	border-width: 1px;
+	border-color: rgb(70, 130, 180);
+	border-style: solid;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	margin: 0pt 0pt 0pt 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.bullet
+{
+
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 8pt;
+	font-family: Verdana, Arial;
+	ime-mode: auto;
+	text-indent: 5pt;
+	padding-right: 3pt;
+	font: normal normal  8pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.bullet1
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	color: rgb(255,255,255);
+	margin: 0pt 0pt 0pt 0pt;
+	padding: 0pt 0pt 0pt 0pt;
+	ime-mode: auto;
+	text-indent: 1pt;
+	padding-right: 1pt;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.bullet2
+{
+
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 7pt;
+	font-family: Verdana, Arial;
+	margin: 0pt 0pt 0pt 0pt;
+	padding: 0pt 0pt 0pt 0pt;
+	ime-mode: auto;
+	text-indent: 1pt;
+	padding-right: 1pt;
+	font: normal normal  7pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.bullet3
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 7pt;
+	font-family: Verdana, Arial;
+	color: rgb(255,255,255);
+	margin: 0pt 0pt 0pt 0pt;
+	padding: 0pt 0pt 0pt 0pt;
+	ime-mode: auto;
+	text-indent: 1pt;
+	padding-right: 1pt;
+	font: normal normal  7pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.TableTop
+{
+	background-color: rgb(70, 130, 180);
+	border-width: 0px;
+	border-style: none;
+	height: 75px;
+	width: 100%;
+	color: rgb(255, 255, 255);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	vertical-align: middle;
+	margin: 0pt 0pt 0pt 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.TableContent
+{
+	border-width: 0px;
+	border-style: none;
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	vertical-align: top;
+	margin: 0pt 0pt 0pt 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	padding: 10pt 10pt 10pt 10pt;
+	padding-top: 10pt;
+	padding-right: 10pt;
+	padding-left: 10pt;
+	padding-bottom: 10pt;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	background-color: #EDEDED;
+	
+}
+
+.Table100x100
+{
+	border-width: 0px;
+	border-style: none;
+	width: 100%;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	vertical-align: top;
+	margin: 0pt 0pt 0pt 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	background-color: #EDEDED;
+	
+}
+
+.TableLeftMenu
+{
+	background-color: rgb(219, 236, 252);
+	border-width: 0px;
+	border-style: none;
+	width: 100%;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 8.25pt;
+	font-family: "Verdana";
+	text-indent: 15pt;
+	margin: 0pt 0pt 0pt 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	font-variant: normal;
+	font: normal normal normal 8.25pt "Verdana";
+	
+}
+
+.TableTopMenu
+{
+	background-color: rgb(255, 255, 255);
+	border-width: 0px;
+	border-style: none;
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 8.25pt;
+	font-family: "Verdana";
+	vertical-align: middle;
+	margin: 0pt 0pt 0pt 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	font-variant: normal;
+	font: normal normal bold 8.25pt "Verdana";
+	
+}
+
+.TextTable
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	ime-mode: auto;
+	padding-right: 3pt;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.TBTopMenu
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 8.25pt;
+	font-family: Verdana, Arial;
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	ime-mode: auto;
+	text-indent: 3pt;
+	padding-right: 3pt;
+	font-variant: normal;
+	font: normal normal bold 8.25pt Verdana, Arial;
+	
+}
+
+.TBLeftMenu
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 8.25pt;
+	font-family: Verdana, Arial;
+	background-color: rgb(219, 236, 252);
+	color: rgb(0, 0, 0);
+	ime-mode: auto;
+	padding-right: 3pt;
+	font-variant: normal;
+	font: normal normal bold 8.25pt Verdana, Arial;
+	
+}
+
+.Title1
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12pt;
+	font-family: Verdana, Arial;
+	color: rgb(70, 130, 180);
+	ime-mode: auto;
+	padding-right: 3pt;
+	font-variant: normal;
+	font: normal normal bold 12pt Verdana, Arial;
+	
+}
+
+.WorkWith
+{
+	border-style: none;
+	margin-left: 4px;
+	border-top-color: Silver;
+	border-right-color: Silver;
+	border-bottom-color: Silver;
+	border-left-color: Silver;
+	border-color: Silver;
+	
+}
+
+.WorkWithUniform
+{
+	border-width: 0px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 8pt;
+	font-family: Arial, Verdana;
+	background-color: rgb(219, 236, 252);
+	font: normal  normal 8pt Arial, Verdana;
+	
+}
+
+.WorkWithOdd
+{
+	border-width: 0px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 8pt;
+	font-family: Arial, Verdana;
+	background-color: RGB(227,241,253);
+	font: normal  normal 8pt Arial, Verdana;
+	
+}
+
+.WorkWithEven
+{
+	border-width: 0px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 8pt;
+	font-family: Arial, Verdana;
+	background-color: White;
+	font: normal  normal 8pt Arial, Verdana;
+	
+}
+
+.WorkWithUniformTitle
+{
+	color: rgb(255, 255, 255);
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial, Verdana;
+	background-color: rgb(219, 236, 252);
+	font: normal  bold 8pt Arial, Verdana;
+	
+}
+
+.WorkWithTitle
+{
+	background-color: #424242;
+	font-size: 11pt;
+	color: rgb(255, 255, 255);
+	font-family: Verdana, Arial;
+	font: normal normal  10pt Verdana, Arial;
+	border-color: #999999;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	font-style: normal;
+	font-variant: normal;
+	height: 5px;
+	font-style: normal;
+	margin: 0pt 0pt 0pt 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	text-decoration: none;
+	
+	
+	}
+
+.ErrorViewer
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 8.25pt;
+	font-family: "Microsoft Sans Serif";
+	color: rgb(255, 0, 0);
+	
+}
+
+.SubTitle1
+{
+	border-width: 0px;
+	border-style: none;
+	height: 30px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10.2pt;
+	font-family: Verdana, Arial;
+	color: rgb(49, 94, 130);
+	ime-mode: auto;
+	font: normal  bold 10.2pt Verdana, Arial;
+	
+}
+
+.subBullet
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	ime-mode: auto;
+	text-indent: 10pt;
+	padding-right: 3pt;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.Form
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 9pt;
+	font-family: "Verdana";
+	color: rgb(0, 0, 0);
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: White;
+	
+}
+
+.VerticalTab
+{
+	background-color: rgb(211, 211, 211);
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	margin: 0pt 0pt 0pt 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.VerticalTabGrid
+{
+	border-width: 0px;
+	border-style: none;
+	
+}
+
+.VerticalTabGridUniform
+{
+	border-width: 0px;
+	background-color: rgb(211, 211, 211);
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 8.25pt;
+	font-family: "Verdana";
+	
+}
+
+.VerticalTabGridOdd
+{
+	border-width: 0px;
+	background-color: rgb(255, 255, 255);
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 8.25pt;
+	font-family: "Verdana";
+	
+}
+
+.VerticalTabGridEven
+{
+	border-width: 0px;
+	background-color: rgb(219, 236, 252);
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 8.25pt;
+	font-family: "Verdana";
+	
+}
+
+
+
+.BtnRefresh
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7.8pt;
+	font-family: "Verdana";
+	color: rgb(8, 93, 148);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(boton_peq.gif);
+	height: 25px;
+	width: 100px;
+	vertical-align: bottom;
+	text-indent: 0pt;
+	margin: 3pt 3pt 0pt 3pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: rgb(237,237,237);
+	
+}
+
+.ActionButtons
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7.8pt;
+	font-family: "Verdana";
+	color: rgb(8, 93, 148);
+	background-color: rgb(237,237,237);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(boton_peq.gif);
+	height: 25px;
+	width: 100px;
+	vertical-align: bottom;
+	text-indent: 0pt;
+	margin: 3pt 3pt 0pt 3pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	
+}
+
+.PagingButtons
+{
+	border-width: 0px;
+	border-style: none;
+	
+}
+
+.Label
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	color: Maroon;
+	ime-mode: auto;
+	padding-right: 3pt;
+	font: normal  bold 9pt Verdana, Arial;
+	
+}
+
+.SelectedTab
+{
+	background-image: url(selectedTab.gif);
+	border-width: 0px;
+	border-style: none;
+	height: 25px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	color: rgb(49,94,130);
+	ime-mode: auto;
+	padding-top: 3pt;
+	padding-right: 3pt;
+	display: block;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-variant: normal;
+	font: normal normal bold 9pt Verdana, Arial;
+	
+}
+
+.UnSelectedTab
+{
+	background-image: url(unSelectedTab.gif);
+	border-width: 0px;
+	border-style: none;
+	height: 25px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	color: rgb(241, 239, 226);
+	ime-mode: auto;
+	padding-top: 3pt;
+	padding-right: 3pt;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	font-variant: normal;
+	font: normal normal bold 9pt Verdana, Arial;
+	
+}
+
+.TableBorder
+{
+	border-width: 8px;
+	border-style: solid;
+	width: 100%;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	vertical-align: top;
+	margin: 0pt 0pt 0pt 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	padding: 5pt 5pt 5pt 5pt;
+	padding-top: 5pt;
+	padding-right: 5pt;
+	padding-left: 5pt;
+	padding-bottom: 5pt;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	border-bottom-color: rgb(206,219,243);
+	border-left-color: rgb(206,219,243);
+	border-right-color: rgb(206,219,243);
+	border-top-color: rgb(206,219,243);
+	border-color: rgb(206,219,243);
+	background-color: #EDEDED;
+	
+}
+
+.ViewTable
+{
+	background-color: rgb(237, 237, 237);
+	border-width: 0px;
+	border-style: none;
+	width: 100%;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	margin: 0pt 0pt 0pt 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.BigButton
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7.8pt;
+	font-family: "Verdana";
+	color: rgb(8, 93, 148);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(boton_gran.gif);
+	height: 25px;
+	width: 140px;
+	vertical-align: bottom;
+	text-indent: 0pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: rgb(237,237,237);
+	
+}
+
+.RecentLinksTable
+{
+	border-width: 0px;
+	border-style: none;
+	height: 5px;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	margin: 0pt 0pt 0pt 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	background-color: rgb(255,255,225);
+	
+}
+
+.RecentLink
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 7.8pt;
+	font-family: Verdana, Arial;
+	ime-mode: auto;
+	padding-right: 3pt;
+	padding-left: 5pt;
+	font: normal normal  7.8pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.HorizontalLine
+{
+	background-color: rgb(176, 196, 222);
+	border-width: 0px;
+	border-style: none;
+	height: 1px;
+	width: 100%;
+	text-decoration: none;
+	font-size: 1pt;
+	margin: 0pt 0pt 0pt 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	font-variant: small-caps;
+	
+}
+
+.Separator
+{
+	border-width: 0px;
+	border-style: none;
+	height: 2px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 7.8pt;
+	font-family: Verdana, Arial;
+	ime-mode: auto;
+	font-variant: normal;
+	font: normal normal normal 7.8pt Verdana, Arial;
+	
+}
+
+.HorizontalSpace
+{
+	background-color: rgb(237, 237, 237);
+	border-width: 0px;
+	border-style: none;
+	height: 10px;
+	width: 100%;
+	text-decoration: none;
+	margin: 0pt 0pt 0pt 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	
+}
+
+.Messages
+{
+	background-color: #FFFFE1;
+	font-size: 8pt;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	font-family: Verdana, Arial;
+	font: normal normal  8pt Verdana, Arial;
+	border-color: #716F64;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	padding: 1px;
+	font-style: normal;
+	font-variant: normal;
+	
+}
+
+.ErrorMessages
+{
+	background-color: #D84523;
+	font-size: 8pt;
+	color: White;
+	border-width: 1px;
+	border-style: solid;
+	font-family: Verdana, Arial;
+	font: normal normal bold 8pt Verdana, Arial;
+	border-color: #716F64;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding: 2px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	
+}
+
+.WarningMessages
+{
+	background-color: rgb(255,255,225);
+	font-size: 9pt;
+	color: #000000;
+	border: 0.8 px outset;
+	border-style: none;
+	font-family: Verdana, Arial;
+	font: normal normal  9pt Verdana, Arial;
+	border-color: #716F64;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	font-style: normal;
+	font-variant: normal;
+	height: 5px;
+	font-style: normal;
+	margin: 0pt 0pt 0pt 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	text-decoration: none;
+}
+
+.BlobContentAttribute
+{
+	ime-mode: auto;
+	font-style: normal;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	
+}
+
+.BlobInputAttribute
+{
+	ime-mode: auto;
+	border-width: 1px;
+	font-style: normal;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	
+}
+
+.ReadonlyBlobContentAttribute
+{
+	ime-mode: auto;
+	font-style: normal;
+	font-variant: normal;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	font: normal normal  9pt Verdana, Arial;
+	
+}
+
+.AttSubTitle
+{
+	color: rgb(49, 94, 130);
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10.2pt;
+	font-family: Verdana, Arial;
+	border-style: none;
+	ime-mode: auto;
+	font: normal  bold 10.2pt Verdana, Arial;
+	height: 30px;
+	
+}
+
+.BlobInputAttSubTitle
+{
+	color: rgb(49, 94, 130);
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10.2pt;
+	font-family: Verdana, Arial;
+	border-style: none;
+	ime-mode: auto;
+	font: normal  bold 10.2pt Verdana, Arial;
+	height: 30px;
+	
+}
+
+.BlobContentAttSubTitle
+{
+	color: rgb(49, 94, 130);
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10.2pt;
+	font-family: Verdana, Arial;
+	border-style: none;
+	ime-mode: auto;
+	font: normal  bold 10.2pt Verdana, Arial;
+	height: 30px;
+	
+}
+
+.ReadonlyBlobContentAttSubTitle
+{
+	color: rgb(49, 94, 130);
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10.2pt;
+	font-family: Verdana, Arial;
+	border-style: none;
+	ime-mode: auto;
+	font: normal  bold 10.2pt Verdana, Arial;
+	height: 30px;
+	
+}
+
+.ReadonlyAttSubTitle
+{
+	color: rgb(49, 94, 130);
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10.2pt;
+	font-family: Verdana, Arial;
+	border-style: none;
+	ime-mode: auto;
+	font: normal  bold 10.2pt Verdana, Arial;
+	height: 30px;
+	
+}
+
+.TableBottom
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	margin: 0pt 0pt 0pt 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-left: 0pt;
+	margin-bottom: 0pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	height: 10px;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	background-color: rgb(237, 237, 237);
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	color: #747474;
+	
+}
+
+.SmallText
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 8pt;
+	font-family: Verdana, Arial;
+	ime-mode: auto;
+	padding-right: 3pt;
+	font: normal normal  8pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.TituloCampo
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	ime-mode: auto;
+	padding-right: 3pt;
+	font: normal normal bold 9pt Verdana, Arial;
+	font-variant: normal;
+	color: rgb(49,94,130);
+	
+}
+
+.TituloTransaccion
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	ime-mode: auto;
+	padding-right: 3pt;
+	font: normal normal bold 9pt Verdana, Arial;
+	font-variant: normal;
+	color: rgb(128,0,0);
+	text-transform: uppercase;
+	
+}
+
+.LabelComboBox
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	ime-mode: auto;
+	padding-right: 3pt;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.CampoN4_Id
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.BlobInputCampoN4_Id
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.BlobContentCampoN4_Id
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.ReadonlyBlobContentCampoN4_Id
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.ReadonlyCampoN4_Id
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.CampoGrilla
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.BlobInputCampoGrilla
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.BlobContentCampoGrilla
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.ReadonlyBlobContentCampoGrilla
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.ReadonlyCampoGrilla
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.ReadonlyDynamicComboBox
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.BlobInputDynamicComboBox
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.BlobContentDynamicComboBox
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.ReadonlyBlobContentDynamicComboBox
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.ListaSeleccion
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 8pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  8pt Verdana, Arial;
+	font-variant: normal;
+	width: 250px;
+	
+}
+
+.BlobInputListaSeleccion
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 8pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  8pt Verdana, Arial;
+	font-variant: normal;
+	width: 250px;
+	
+}
+
+.BlobContentListaSeleccion
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 8pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  8pt Verdana, Arial;
+	font-variant: normal;
+	width: 250px;
+	
+}
+
+.ReadonlyBlobContentListaSeleccion
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 8pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  8pt Verdana, Arial;
+	font-variant: normal;
+	width: 250px;
+	
+}
+
+.ReadonlyListaSeleccion
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 8pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  8pt Verdana, Arial;
+	font-variant: normal;
+	width: 250px;
+	
+}
+
+.login
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.BlobInputlogin
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.BlobContentlogin
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.ReadonlyBlobContentlogin
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.Readonlylogin
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.UserLogueado
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.BlobInputUserLogueado
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.BlobContentUserLogueado
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.ReadonlyBlobContentUserLogueado
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.ReadonlyUserLogueado
+{
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	border-width: 1px;
+	border-color: rgb(176, 196, 222);
+	border-style: inset;
+	ime-mode: auto;
+	font: normal normal  9pt Verdana, Arial;
+	font-variant: normal;
+	
+}
+
+.Grilla
+{
+	border-style: none;
+	margin-left: 4px;
+	border-top-color: Silver;
+	border-right-color: Silver;
+	border-bottom-color: Silver;
+	border-left-color: Silver;
+	border-color: Silver;
+	background-color: Transparent;
+	
+}
+
+.GrillaUniform
+{
+	border-width: 0px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 8pt;
+	font-family: Arial, Verdana;
+	background-color: rgb(219, 236, 252);
+	font: normal  normal 8pt Arial, Verdana;
+	
+}
+
+.GrillaOdd
+{
+	border-width: 0px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 8pt;
+	font-family: Arial, Verdana;
+	background-color: RGB(227,241,253);
+	font: normal  normal 8pt Arial, Verdana;
+	
+}
+
+.GrillaEven
+{
+	border-width: 0px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 8pt;
+	font-family: Arial, Verdana;
+	background-color: White;
+	font: normal  normal 8pt Arial, Verdana;
+	
+}
+
+.GrillaUniformTitle
+{
+	color: rgb(255, 255, 255);
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial, Verdana;
+	background-color: rgb(219, 236, 252);
+	font: normal  bold 8pt Arial, Verdana;
+	
+}
+
+.GrillaTitle
+{
+	color: rgb(255, 255, 255);
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial, Verdana;
+	background-color: rgb(70, 130, 180);
+	font: normal  bold 8pt Arial, Verdana;
+	
+}
+
+.TituloOpcion
+{
+	background-image: url(unSelectedTab.gif);
+	border-width: 0px;
+	border-style: none;
+	height: 25px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	color: rgb(241, 239, 226);
+	ime-mode: auto;
+	padding-top: 3pt;
+	padding-right: 3pt;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	font-variant: normal;
+	font: normal normal bold 9pt Verdana, Arial;
+	text-align: center;
+	
+}
+
+.LabelGral
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	ime-mode: auto;
+	padding-right: 3pt;
+	font: normal  bold 9pt Verdana, Arial;
+	color: Maroon;
+	
+}
+
+.BtnSearch
+{
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 7.8pt;
+	font-family: "Verdana";
+	color: rgb(8, 93, 148);
+	border-width: 0px;
+	border-style: outset;
+	background-image: url(search.gif);
+	height: 27px;
+	width: 30px;
+	vertical-align: bottom;
+	text-indent: 0pt;
+	margin: 3pt 3pt 0pt 3pt;
+	margin-top: 3pt;
+	margin-right: 3pt;
+	margin-left: 0pt;
+	margin-bottom: 3pt;
+	padding: 0pt 0pt 0pt 0pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	background-color: rgb(237,237,237);
+	
+}
+
+.TituloGrande
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15pt;
+	font-family: Verdana, Arial;
+	color: rgb(0,0,102);
+	ime-mode: auto;
+	padding-right: 3pt;
+	font-variant: normal;
+	font: normal normal bold 15pt Verdana, Arial;
+	
+}
+
+.SubTituloGrande
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Arial;
+	color: rgb(0,0,102);
+	ime-mode: auto;
+	padding-right: 3pt;
+	font-variant: normal;
+	font: normal normal bold 10pt Arial;
+	
+}
+
+.SubTituloGrandeBlanco
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Arial;
+	color: rgb(255,255,255);
+	ime-mode: auto;
+	padding-right: 3pt;
+	font-variant: normal;
+	font: normal normal bold 10pt Arial;
+	
+}
+
+.SubTituloGrande2
+{
+	border-width: 0px;
+	border-style: none;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Arial;
+	color: #000;
+	ime-mode: auto;
+	padding-right: 3pt;
+	font-variant: normal;
+	font: normal normal bold 10pt Arial;
+	
+}
+
+.UnSelectedTab A
+{
+	text-decoration: none;
+	color: rgb(241, 239, 226);
+	
+}
+div.suggestions
+{
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-style: solid;
+	border-width: 1px;
+	position: absolute;
+	border-top-color: rgb(70, 130, 180);
+	border-right-color: rgb(70, 130, 180);
+	border-bottom-color: rgb(70, 130, 180);
+	border-left-color: rgb(70, 130, 180);
+	border-color: rgb(70, 130, 180);
+	background-color: white;
+	font-style: normal;
+	font-variant: normal;
+	font-size: 8pt;
+	font-family: Verdana, Arial;
+	font: normal normal  8pt Verdana, Arial;
+	
+}
+div.suggestions div
+{
+	cursor: default;
+	padding-top: 0px;
+	padding-right: 3px;
+	padding-bottom: 0px;
+	padding-left: 3px;
+	padding: 0px 3px;
+	
+}
+div.suggestions div.current
+{
+	background-color: rgb(70, 130, 180);
+	color: white;
+	
+}
+

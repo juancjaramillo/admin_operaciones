@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <meta name="description" content="description">
+     
+    <title>Scroll Test</title>
+     
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <link rel="stylesheet" href="stroll.min.css">
+		<script>
+var arrContent=new Array();
+for(i=0;i<10;i++){
+	arrContent[arrContent.length]="<img src=\"http://lorempixum.com/200/200/city/6\"> <h2>Headline " + i + "</h2> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet. Curabitur aliquet orci sit amet est posuere consectetur. Fusce nec leo ut massa viverra venenatis. Nam accumsan libero a elit aliquet quis ullamcorper arcu tincidunt. Praesent purus turpis, consectetur quis congue vel, pulvinar at lorem. Vivamus varius condimentum dolor, quis ultricies ipsum porta quis. </p>";
+}
+var contador=0;
+function traer(){
+	var ul=document.getElementById('ulFlip');
+	console.log(ul);
+	var frag = document.createDocumentFragment();
+	var li = document.createElement("li");
+	li.innerHTML=arrContent[contador];
+//	li.className="future";
+//	li._state = "future";
+	frag.appendChild(li);
+	ul.appendChild(frag);
+//	ul.appendChild(li);
+//	li.classList.remove( 'future' );
+	
+	li.scrollIntoView(true);
+	contador++;
+}
+		</script>
+  </head>
+ 
+<body>
+  <div class="header"><a href="http://designshack.net/articles/css/scrolljs/">Go Back to Design Shack</a></div>
+ 
+  <div id="main">
+    <h1>Stroll.js Flip</h1>
+    <ul class="flip" id="ulFlip">
+      <li>
+        <img src="http://lorempixum.com/200/200/city/1">
+        <h2>Headline One</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet. Curabitur aliquet orci sit amet est posuere consectetur. Fusce nec leo ut massa viverra venenatis. Nam accumsan libero a elit aliquet quis ullamcorper arcu tincidunt. Praesent purus turpis, consectetur quis congue vel, pulvinar at lorem. Vivamus varius condimentum dolor, quis ultricies ipsum porta quis. </p>
+      </li>
+    </ul>
+
+<input type="button" value="ASD" onClick="traer()">
+
+  </div>
+
+  <script src="stroll.min.js"></script>
+  <script>
+    stroll.bind( '#main ul' );
+  </script>
+</body>
+</html>

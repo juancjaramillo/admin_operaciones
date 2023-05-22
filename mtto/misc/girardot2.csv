@@ -1,0 +1,107 @@
+"Nombre Rutina";"sistema";"Grupo (Arbol Equipos)";"Lugar";"Frecuencia";"Frecuencia Horas ";"Frecuencia Kms ";"No. de frecuencias a cumplir";"Tiempo de Ejecución en minutos";"Tipo de Manto";"Prioridad";"Orden Actividad";"Nombre Actividad";"Descripción";"Tiempo actividad en minutos";"Cargo";"Tiempo"
+"Sincronizacion Motor 2";1;107;"Interno";;"20.000 ";"200.000 ";;;"Predictivo";"Alta";3;"CAM-INYE";"Cambio de inyectores";240;12;240
+"Sincronizacion Motor 3";1;107;"Interno";;"3.328 ";"40.000 ";;;"Preventivo";"Alta";4;"CAM-COR";"Cambio de correas";15;14;15
+"Reparacion Motor";1;107;"Externo";"Anual";"25.000 ";"300.000 ";;14.400;"Predictivo";"Baja";1;"REP-MOT";"Reparacion de motor";14.400;;14.400
+"Sistema refrigeracion 2";12;107;"Interno";"Quincenal";"150 ";"2.500 ";;455;"Preventivo";"Alta";1;"LIM-RAD";"Limpieza del panal";20;14;20
+"Sistema refrigeracion 3";12;107;"Externo";"Anual";"20.000 ";"200.000 ";;;"Preventivo";;2;"MAN-RAD";"Mantenimiento radiador";30;;30
+"Sistema refrigeracion 4";12;107;"Externo";"Anual";"5.000 ";"50.000 ";;;;;6;"CAM-EMP-BOM";"Cambio Empaquetadura bomba";30;;30
+"Sistema refrigeracion 5";12;107;"Externo";"Anual";"25.000 ";"300.000 ";;;;;7;"CAM- BOM";"Cambio de bomba";180;12;180
+"Sistema refrigeracion 6";12;107;"Interno";"Anual";"20.000 ";"200.000 ";;;;;8;"CAM-REF";"Cambio de refrigerante";45;14;45
+"Sitema Compactacion 1";6;107;"Interno";"Anual";"25.000 ";"300.000 ";;10.310;"Preventivo";"Alta";1;"CAM-ACE";"Cambio de aceite";20;14;20
+"Sitema Compactacion 2";6;107;"Interno";"Semestral";"3.500 ";"40.000 ";;;;;2;"CAM-FIL";"Cambio de filtro";10;14;10
+"Sitema Compactacion 3";6;107;"Externo";"Anual";"25.000 ";"300.000 ";;;;;3;"REP-MAND";"Reparacion de mandos";5.760;;5760
+"Sitema Compactacion 4";6;107;"Externo";"Anual";;;;;;;4;"REP-CIN-HID";"Reparacion cilindros hidraulicos";4.500;;4.500
+"Sitema Compactacion 5";6;107;"Interno";"Anual";"5.000 ";"50.000 ";;;"Preventivo";"Alta";5;"CAM-MAN";"Cambio de mangueras";20;14;20
+"Sistema electrico 1";1;107;"Interno";;"2.500 ";"30.000 ";;740;"Preventivo";"Alta";1;"REP-ALT";"Reparacion alternador";180;15;180
+"Sistema electrico 2";1;107;"Interno";;"2.500 ";"30.000 ";;;"Preventivo";"Alta";2;"REP-MOT-ARR";"Reparacion motor arranque";180;15;180
+"Sistema electrico 3";1;107;"Interno";;"10.000 ";"100.000 ";;;"Predictivo";"Baja";3;"CAM-ALT";"Cambio alternador";60;15;60
+"Sistema electrico 4";1;107;"Interno";;"10.000 ";"100.000 ";;;"Predictivo";"Baja";4;"CAM-MOT-ARR";"Cambio de motor arranque";60;15;60
+"Sistema electrico 5";1;107;"Interno";;"832 ";"10.000 ";;;"Preventivo";"Alta";5;"ROT-BAT";"Rotacion de baterias";80;15;80
+"Sistema electrico 6";1;107;"Interno";;"3.000 ";"35.000 ";;;"Predictivo";"Baja";6;"CAM-BAT";"Cambio de baterias";60;15;60
+"Sistema electrico 7";1;107;"Interno";;"400 ";"5.000 ";;;"Preventivo";"Alta";7;"REV-LUC";"Revision de luces";120;15;120
+"Sistema Transmision y diferencial 1";3;107;"Interno";"Anual";"5.000 ";"50.000 ";;440;"Preventivo";"Alta";1;"CAM-ACE";"Cambio de aceite";20;12;20
+"Sistema Transmision y diferencial 2";3;107;"Interno";"Anual";"25.000 ";"300.000 ";;;"Preventivo";"Alta";2;"REP-TRANS";"Reparacion de la transmision";300;12;300
+"Sistema Transmision y diferencial 3";3;107;"Interno";"Semestral";"25.000 ";"30.000 ";;;"Preventivo";"Alta";3;"CAM-BUJ-PAL";"Cambio buje palanca";60;14;60
+"Sistema Transmision y diferencial 4";3;107;"Interno";"Anual";"10.000 ";"100.000 ";;;"Preventivo";"Alta";4;"CAM-DAD";"Cambio del dado";60;12;60
+"Sistema Transmision y diferencial 5";3;107;"Externo";"Anual";"25.000 ";"300.000 ";;;;;;;"Reparacion trans.automatica";7200;;7200
+"Sistema Transmision y diferencial 6";2;107;"Interno";;"5.000 ";"50.000 ";;;;;1;"CAM-ACE";"Cambio de aceite";20;14;20
+"Sistema Transmision y diferencial 7";2;107;"Externo";"Anual";"25.000 ";"300.000 ";;4240;"Preventivo";"Alta";2;"REP-DIF";"Reparacion diferencial";4000;12;4000
+"Sistema Transmision y diferencial 8";2;107;"Interno";"Anual";"25.000 ";"300.000 ";;;"Preventivo";"Alta";3;"CAM-EJE";"Cambio de eje";120;12;120
+"Sistema Transmision y diferencial 9";2;107;"Interno";"Anual";"5.000 ";"50.000 ";;;"Preventivo";"Alta";4;"CAM-RET";"Cambio de retenedor bocin";120;12;120
+"Sistema de frenos 1";9;107;"Interno";"Semestral";"4.500 ";"40.000 ";;730;"Preventivo";"Alta";1;"CAM-LQI-FRE";"Cambio de liquido de freno";15;14;15
+"Sistema de frenos 2";9;107;"Interno";"Anual";"5.000 ";"50.000 ";;;"Preventivo";"Alta";2;"CAM-EMP-BOM";"Cambio de empaquetadura bomba";180;12;180
+;9;107;"Interno";"Anual";"5.000 ";"50.000 ";;;"Preventivo";"Alta";4;"CAM-EMP-REL";"Cambio empaquetadura relay";90;12;90
+;9;107;"Interno";"Anual";"5.000 ";"50.000 ";;;"Preventivo";"Alta";6;"CAM-BAN-FRE";"Cambio de banda freno";120;12;120
+"Sistema de frenos 3";9;107;"Interno";"Semestral";"2.500 ";"30.000 ";;;"Preventivo";"Alta";3;"REV-REC";"Revision de recamaras";40;14;40
+;9;107;"Interno";"Semestral";"2.500 ";"30.000 ";;;"Preventivo";"Alta";11;"CAM-RAC-FRE";"Cambio rache freno";20;14;20
+"Sistema de frenos 4";9;107;"Interno";"Anual";"10.000 ";"100.000 ";;;"Preventivo";"Alta";5;"CAM-VAL-REL";"Cambio de valvula relay";60;14;60
+"Sistema de frenos 5";9;107;"Interno";"Anual";"2.500 ";"25.000 ";;;"Preventivo";"Alta";7;"CAM-ROD";"Cambio de rodajas";120;12;120
+"Sistema de frenos 6";9;107;"Interno";"Anual";"20.000 ";"200.000 ";;;"Preventivo";"Alta";10;"CAM-VAL-SEG";"Cambio de valvula seguridad";60;12;60
+;9;107;"Interno";"Anual";"20.000 ";"200.000 ";;;"Preventivo";"Alta";8;"CAM-BOM-FRE";"Cambio bomba de freno";120;12;120
+"Sistema de frenos 7";9;107;"Interno";"Mensual";"400 ";"5.000 ";;;"Preventivo";"Alta";9;"REG-FRE";"Reglaje de frenos";15;14;15
+"Sistema de frenos 8";9;107;"Interno";"Mensual";"400 ";"5.000 ";;;"Preventivo";"Alta";12;"ENG-RAC-FRE";"Engrase rache freno";10;14;10
+"Sistema de Embrague 1";8;107;"Interno";"Anual";"6.000 ";"70.000 ";;;"Preventivo";"Alta";1;"CAM-EMB";"Cambio de embrague";240;12;240
+"Sistema de Embrague 2";8;107;"Interno";"Semestral";"4.000 ";"20.000 ";;;"Preventivo";"Alta";2;"REV-REG-EMB";"Revision y reglaje";20;12;20
+"Sistema de Embrague 3";8;107;"Interno";"Mensual";"400 ";"5.000 ";;;"Preventivo";"Alta";3;"ENG-BAL";"Engrase balinera";10;14;10
+"Sistema de Embrague 4";8;107;"Interno";"Anual";"25.000 ";"300.000 ";;;"Preventivo";"Alta";4;"CAM-PRO";"Cambio del propulsor";180;12;180
+"Sistema de Suspensión 1";5;107;"Interno";"Semestral";"2.700 ";"30.000 ";;640;"Preventivo";"Alta";1;"AJU-SPL";"Ajuste de Splinder";30;12;30
+"Sistema de Suspensión 2";5;107;"Interno";"Anual";"10.000 ";"100.000 ";;;"Preventivo";"Alta";2;"CAM-SPL";"Cambio de Splinder";120;12;120
+"Sistema de Suspensión 3";5;107;"Interno";"Mensual";"400 ";"5.000 ";;;"Preventivo";"Alta";3;"ENG-TER";"Engrase terminales";10;14;10
+"Sistema de Suspensión 4";5;107;"Interno";;"25.000 ";"300.000 ";;;"Preventivo";"Alta";4;"CAM-AMOR";"Cambio de Amortiguadores";90;12;90
+"Sistema de Suspensión 5";5;107;"Externo";"Anual";"5.000 ";"50.000 ";;;"Preventivo";"Alta";5;"CAM-EMP-CAJ-DIR";"Cambio empaquetadura caja de direccion";180;;180
+;5;107;"Interno";"Anual";"5.000 ";"50.000 ";;;"Preventivo";"Alta";7;"CAM-CAÑ-DIR";"Cambio de caña direccion";45;12;45
+"Sistema de Suspensión 6";5;107;"Interno";"Anual";"25.000 ";"300.000 ";;;"Preventivo";"Alta";6;"CAM-CAJ-DIR";"Cambio de caja direccion";120;12;120
+"Sistema de Suspensión 7";5;107;"Interno";"Semestral";"2.500 ";"25.000 ";;;"Preventivo";"Alta";8;"CAM-ROD-CAÑ-DIR";"Cambio de rodamiento caña";45;12;45
+"Caja Compactadora 1";6;107;"Interno";"diario";"24 ";"190 ";;17310;"Preventivo";"Alta";1;"LAV-GEN";"Lavado general";30;18;30
+"Caja Compactadora 2";6;107;"Interno";"diario";"48 ";"380 ";;;"Preventivo";"Alta";2;"ENG-GEN";"Engrase general";15;18;15
+"Caja Compactadora 3";6;107;"Interno";"Anual";"10.000 ";"100.000 ";;;"Preventivo";"Alta";3;"CAM-LAM-CAJ";"Cambio lamina caja";11520;19;11520
+"Caja Compactadora 4";6;107;"Interno";"Anual";"20.000 ";"200.000 ";;;"Preventivo";"Alta";4;"CAM-LAM-POR";"Cambio laminas portalon";5700;19;5700
+"Caja Compactadora 5";6;107;"Interno";"Anual";"5.000 ";"50.000 ";;;"Preventivo";"Alta";5;"CAM-RES-CAJ";"Cambio resortes caja";45;19;45
+"Lubricación Motor cam 1";1;112;"Interno";"Mensual";;"5.000 ";2;35;"Preventivo";"Alta";1;"CAM-FIL-ACE";"Cambio filtro Aceite";10;14;10
+;1;112;;;;;;;"Preventivo";;2;"CAM-ACE-MOT";"Cambio Aceite Motor";15;14;15
+;1;112;;;;;;;"Preventivo";;3;"CAM-FIL-COM";"Cambio filtro combustible";10;14;10
+;1;112;;;;;;;"Preventivo";;4;"CAM-FIL-SEP";"Cambio filtro separador";10;14;10
+;1;112;;;;;;;"Preventivo";;5;"CAM-FIL-AIR";"Cambio filtro aire";10;14;10
+"Lubricación Motor cam 2";1;112;"Interno";"Mensual";;"10.000 ";;;"Preventivo";"Alta";6;"COM-RUI";"Comprobacion de ruidos";15;12;15
+"Sincronizacion Motor cam 1";1;112;"Externo";"Anual";;"100.000 ";;105;"Preventivo";"Baja";1;"CAL-VAL";"Calibracion de valvulas";;;
+"Sincronizacion Motor cam2";1;112;"Interno";"Anual";;"83.200 ";;;"Preventivo";"Baja";2;"CAM-BAN-MOT";"Cambio bandas motor";30;12;30
+;1;112;;"Anual";;"83.200 ";;;"Preventivo";"Baja";3;"APR-TOR-MOT";"Apriete par tornillo motor";60;12;60
+;1;112;;;;;;;;;;"INS-MAN-SIST.INY";"Inspeccion mangueras sist.inyeccion";15;12;15
+"Refrigeracion cam 1";1;112;"Interno";"Mensual";;"10.000 ";;50;"Preventivo";"Alta";1;"INS-SIST-ENFR";"Inspeccionar sistema enfriamento";15;12;15
+;1;112;;"Mensual";;"10.000 ";;;"Preventivo";"Alta";3;"INS-SIST-ESC";"Inspeccion sistema escape";15;12;15
+"Refrigeracion cam2";1;112;"Interno";"Anual";;"40.000 ";;;"Preventivo";"Baja";2;"CAM-REFR";"Cambio refrigerante";20;12;20
+"Sistema freno cam1";9;112;"Interno";"Mensual";;"10.000 ";;180;"Preventivo";"Alta";1;"INS-BAN-FRE";"Inspeccion bandas frenos";15;12;15
+"Sistema freno cam2";9;112;"Interno";"Anual";;"40.000 ";;;"Preventivo";"Baja";2;"INS-DIS-FRE";"Inspeccion disco freno";15;12;15
+;9;112;;"Anual";;"40.000 ";;;"Preventivo";"Baja";3;"INS-SEN-MAN-FRE";"Inspeccion sensor manguera freno";15;12;15
+;9;112;;"Anual";;"40.000 ";;;"Preventivo";"Baja";6;"CAM-BAN-FRE";"Cambio de bandas freno";60;12;60
+"Sistema freno cam3";9;112;;"Anual";;"50.000 ";;;"Preventivo";"Baja";4;"CAM-LIQ-FRE";"Cambio liquido freno";15;12;15
+"Sistema freno cam4";9;112;;"Anual";;"80.000 ";;;"Preventivo";"Baja";5;"CAM-DIS-FRE";"Cambio de disco freno";60;12;60
+"Sistema embrague";3;112;"Interno";"Anual";;"40.000 ";;285;"Preventivo";"Baja";1;"TEN-EMB";"Tensionar embrague";20;12;20
+;3;112;;"Anual";;"40.000 ";;;"Preventivo";"Baja";3;"CAM-ACE-TRANS";"Cambio aceite transmision";40;12;40
+;3;112;;"Anual";;"40.000 ";;;"Preventivo";"Baja";4;"CAM-ACE-DIFR";"Cambio aceite diferencial";15;12;15
+"Sistema embrague 2";3;112;;"Anual";;"80.000 ";;;"Preventivo";"Baja";2;"CAM-EMB";"Cambio de embrague";180;12;180
+"Sistema embrague 3";3;112;;"Mensual";;"20.000 ";;;"Preventivo";"Alta";5;"APR-TOR-TRANS";"Apriete tornillos transmision";30;12;30
+"Sistema de suspension";13;112;"Interno";"Anual";;"50.000 ";;210;"Preventivo";"Baja";1;"CAM-ACE-DIR";"Cambio de aceite direccion";15;14;15
+;13;112;;"Anual";;"50.000 ";;;"Preventivo";"Baja";7;"ENG-ROD-RUE";"Engrase rodamiento ruedas";30;12;30
+"Sistema de suspension 2";13;112;;"Anual";;"40.000 ";;;"Preventivo";"Baja";2;"APR-TOR-DIR";"Apriete tornillos direccion";30;14;30
+"Sistema de suspension 3";13;112;;"Mensual";;"20.000 ";;;"Preventivo";"Alta";3;"LUB-EJE-DIR";"Lubricacion eje direccion";15;14;15
+"Sistema de suspension 4";13;112;;"Mensual";;"10.000 ";;;"Preventivo";"Alta";4;"APR-GRA-MUE";"Apriete grapas muelle";30;14;30
+;13;112;;"Mensual";;"10.000 ";;;"Preventivo";"Alta";5;"APR-PER-MUE";"Apriete pernos muelle";30;14;30
+;13;112;;"Mensual";;"10.000 ";;;"Preventivo";"Alta";6;"ROT-LLAN";"Rotacion de llantas";60;20;60
+"MANTENIMIENTO DE SEGURIDAD 1";6;107;"Interno";"Semestral";;;1;90;"Preventivo";"Alta";1;"REV-SWI-ARR";"Revisión Switche de Arranque";10;12;10
+;6;107;;;;;;;;;2;"REV-SIS-ESC";"Revision Sistema de Escape de los gases de combustión (exostos)";10;12;10
+;6;107;;;;;;;;;3;"REV-MOT-LIM";"Revisión Motor Limpiaparabrisas y Plumillas";10;15;10
+;6;107;;;;;;;;;4;"REV-SEG-ASI";"Seguros de los Asientos";10;12;10
+;6;107;;;;;;;;;5;"REV-SIS-LUC";"Revision sistema de luces";10;15;10
+;6;107;;;;;;;;;6;"REV-SIS-FRE";"Revision de frenos";10;12;10
+;6;107;;;;;;;;;7;"REV-REC";"Revision de recamaras";10;12;10
+;6;107;;;;;;;;;8;"REV-MANG-FRE";"Revision mangueras frenos";10;12;10
+;6;107;;;;;;;;;9;"REV-MANG-HID";"Revision mangueras hidraulicas";10;12;10
+"MANTENIMIENTO DE SEGURIDAD 2";6;107;"Interno";"Mensual";;;1;40;"Preventivo";"Alta";1;"REV-SWI-ARR";"Revisión Freno de Parqueo";10;12;10
+;6;107;;;;;;;;;2;"REV-CAR-ALT";"Revision carga alternador";10;15;10
+;6;107;;;;;;;;;3;"REV-MOT-ARR";"Revision motor arranque";10;15;10
+;6;107;;;;;;;;;4;"REV-SIS-ESC";"Revisión de sensores";10;12;10
+"MANTENIMIENTO QUINCENAL";6;107;"Interno";"Quincenal";;;1;45;"Preventivo";"Alta";1;"REV-SIS-ESC";"Revisión sistema de Escape";10;14;10
+;6;107;;;;;;;;;2;"REV-SUS-DIR";"Revision de la Suspensión y La Dirección";15;14;15
+;6;107;;;;;;;;;3;"REV-VAR-ALI-COM";"Revision  varillaje alimentación de combustible";20;14;20
+;6;107;;;;;;;;;4;"REV-TAP-TAN";"Revisión tapa, tanque y líneas de Combustible";10;14;10

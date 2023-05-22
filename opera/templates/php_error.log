@@ -1,0 +1,11 @@
+[02-Mar-2018 11:47:13 America/Bogota] PHP Warning:  pg_exec(): Query failed: ERROR:  syntax error at or near &quot;:&quot;
+LINE 1: ...T p.nombre, mp.id, mp.veces, '&lt;a href=\'javascript:eliminar(...
+                                                             ^ in /home/aseopad/public_html/lib/db/postgres7.php on line 200
+[02-Mar-2018 11:47:13 America/Bogota] No se puede ejecutar la consulta:
+SELECT p.nombre, mp.id, mp.veces, '&lt;a href=\'javascript:eliminar('||mp.id||')\'&gt;&lt;img alt=\'Eliminar\' title=\'Eliminar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/trash-x.png\' border=\'0\'&gt;&lt;/a&gt;' as opciones
+		FROM rec.movimientos_peajes mp
+		LEFT JOIN peajes p ON p.id=mp.id_peaje
+		WHERE mp.id_movimiento=388087
+Error PostgreSQL :: ERROR:  syntax error at or near ":"
+LINE 1: ...T p.nombre, mp.id, mp.veces, '<a href=\'javascript:eliminar(...
+                                                             ^

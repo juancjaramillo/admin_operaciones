@@ -1,0 +1,81 @@
+
+rev => REV>
+evento => 8
+id_vehiculo => 10053
+status => V
+velocidad => 0
+azimut => 0
+tiempo => 2015-12-01 20:44:53
+latitud => 0
+longitud => 0
+=====
+rev => REV>
+evento => 14
+id_vehiculo => 10053
+status => V
+velocidad => 
+azimut => 0
+tiempo => 2015-12-01 00:00:00
+latitud => 
+longitud => 
+=====
+rev => REV>
+evento => 8
+id_vehiculo => 10053
+status => V
+velocidad => 0
+azimut => 0
+tiempo => 2015-12-01 20:45:33
+latitud => 0
+longitud => 0
+=====
+rev => REV>
+evento => 8
+id_vehiculo => 10053
+status => A
+velocidad => 1
+azimut => 0
+tiempo => 2015-12-01 20:46:03
+latitud => 4.6708566666667
+longitud => -74.053146666667
+=====
+rev => REV>
+evento => 8
+id_vehiculo => 10053
+status => V
+velocidad => 
+azimut => 0
+tiempo => 2016-01-10 00:00:00
+latitud => 
+longitud => 
+=====
+rev => REV>
+evento => 14
+id_vehiculo => 10053
+status => V
+velocidad => 
+azimut => 0
+tiempo => 2016-01-10 00:00:00
+latitud => 
+longitud => 
+=====
+rev => REV>
+evento => 8
+id_vehiculo => 10053
+status => V
+velocidad => 
+azimut => 0
+tiempo => 2016-01-10 00:00:00
+latitud => 
+longitud => 
+=====
+rev => REV>
+evento => 8
+id_vehiculo => 10053
+status => V
+velocidad => 
+azimut => 0
+tiempo => 2016-01-10 00:00:00
+latitud => 
+longitud => 
+=====

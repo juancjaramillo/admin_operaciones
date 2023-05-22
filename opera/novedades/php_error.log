@@ -1,0 +1,253 @@
+[19-Feb-2018 20:00:46 UTC] PHP Warning:  pg_exec(): Query failed: ERROR:  syntax error at or near &quot;javascript&quot;
+LINE 1: ...iones, case when hora_fin IS NULL then '&lt;a href=\'javascript...
+                                                             ^ in /home/aseopad/public_html/lib/db/postgres7.php on line 200
+[19-Feb-2018 20:00:46 UTC] No se puede ejecutar la consulta:
+SELECT n.id, e.nombre, to_char(n.hora_inicio,'YYYY/MM/DD') as fini, to_char(n.hora_inicio,'HH24:MI:SS') as hini, n.observaciones, case when hora_fin IS NULL then '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=\'javascript:cerrar('||n.id||')\'&gt;&lt;img alt=\'Cerrar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/check_green.png\' border=\'0\'&gt;&lt;/a&gt;' else '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;' end as editar 
+			FROM novedades n
+			LEFT JOIN mtto.equipos e ON e.id=n.id_equipo
+			WHERE n.id_centro IN (SELECT id_centro FROM personas_centros WHERE id_persona='1647')  AND hora_fin IS NULL AND n.esquema != 'mtto'
+			ORDER BY n.hora_inicio
+Error PostgreSQL :: ERROR:  syntax error at or near "javascript"
+LINE 1: ...iones, case when hora_fin IS NULL then '<a href=\'javascript...
+                                                             ^
+[19-Feb-2018 20:02:57 UTC] PHP Warning:  pg_exec(): Query failed: ERROR:  syntax error at or near &quot;javascript&quot;
+LINE 1: ...iones, case when hora_fin IS NULL then '&lt;a href=\'javascript...
+                                                             ^ in /home/aseopad/public_html/lib/db/postgres7.php on line 200
+[19-Feb-2018 20:02:57 UTC] No se puede ejecutar la consulta:
+SELECT n.id, e.nombre, to_char(n.hora_inicio,'YYYY/MM/DD') as fini, to_char(n.hora_inicio,'HH24:MI:SS') as hini, n.observaciones, case when hora_fin IS NULL then '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=\'javascript:cerrar('||n.id||')\'&gt;&lt;img alt=\'Cerrar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/check_green.png\' border=\'0\'&gt;&lt;/a&gt;' else '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;' end as editar , array_to_string(array(
+			SELECT mtto.rutinas.rutina||'/'||mtto.ordenes_trabajo.fecha_planeada
+			FROM mtto.ordenes_trabajo
+			LEFT JOIN mtto.rutinas ON mtto.ordenes_trabajo.id_rutina=mtto.rutinas.id
+			WHERE mtto.ordenes_trabajo.id_novedad = n.id
+         ),', ') as ots
+			FROM novedades n
+			LEFT JOIN mtto.equipos e ON e.id=n.id_equipo
+			WHERE n.id_centro IN (SELECT id_centro FROM personas_centros WHERE id_persona='1647')  AND hora_fin IS NULL AND n.esquema = 'mtto'
+			ORDER BY n.hora_inicio
+Error PostgreSQL :: ERROR:  syntax error at or near "javascript"
+LINE 1: ...iones, case when hora_fin IS NULL then '<a href=\'javascript...
+                                                             ^
+[19-Feb-2018 20:03:06 UTC] PHP Warning:  pg_exec(): Query failed: ERROR:  syntax error at or near &quot;javascript&quot;
+LINE 1: ...iones, case when hora_fin IS NULL then '&lt;a href=\'javascript...
+                                                             ^ in /home/aseopad/public_html/lib/db/postgres7.php on line 200
+[19-Feb-2018 20:03:06 UTC] No se puede ejecutar la consulta:
+SELECT n.id, e.nombre, to_char(n.hora_inicio,'YYYY/MM/DD') as fini, to_char(n.hora_inicio,'HH24:MI:SS') as hini, n.observaciones, case when hora_fin IS NULL then '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=\'javascript:cerrar('||n.id||')\'&gt;&lt;img alt=\'Cerrar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/check_green.png\' border=\'0\'&gt;&lt;/a&gt;' else '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;' end as editar 
+			FROM novedades n
+			LEFT JOIN mtto.equipos e ON e.id=n.id_equipo
+			WHERE n.id_centro IN (SELECT id_centro FROM personas_centros WHERE id_persona='1647')  AND hora_fin IS NULL AND n.esquema != 'mtto'
+			ORDER BY n.hora_inicio
+Error PostgreSQL :: ERROR:  syntax error at or near "javascript"
+LINE 1: ...iones, case when hora_fin IS NULL then '<a href=\'javascript...
+                                                             ^
+[19-Feb-2018 20:47:05 UTC] PHP Warning:  pg_exec(): Query failed: ERROR:  syntax error at or near &quot;javascript&quot;
+LINE 1: ...iones, case when hora_fin IS NULL then '&lt;a href=\'javascript...
+                                                             ^ in /home/aseopad/public_html/lib/db/postgres7.php on line 200
+[19-Feb-2018 20:47:05 UTC] No se puede ejecutar la consulta:
+SELECT n.id, e.nombre, to_char(n.hora_inicio,'YYYY/MM/DD') as fini, to_char(n.hora_inicio,'HH24:MI:SS') as hini, n.observaciones, case when hora_fin IS NULL then '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=\'javascript:cerrar('||n.id||')\'&gt;&lt;img alt=\'Cerrar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/check_green.png\' border=\'0\'&gt;&lt;/a&gt;' else '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;' end as editar 
+			FROM novedades n
+			LEFT JOIN mtto.equipos e ON e.id=n.id_equipo
+			WHERE n.id_centro IN (SELECT id_centro FROM personas_centros WHERE id_persona='1648')  AND hora_fin IS NULL AND n.esquema != 'mtto'
+			ORDER BY n.hora_inicio
+Error PostgreSQL :: ERROR:  syntax error at or near "javascript"
+LINE 1: ...iones, case when hora_fin IS NULL then '<a href=\'javascript...
+                                                             ^
+[20-Feb-2018 18:48:45 UTC] PHP Warning:  pg_exec(): Query failed: ERROR:  syntax error at or near &quot;javascript&quot;
+LINE 1: ...iones, case when hora_fin IS NULL then '&lt;a href=\'javascript...
+                                                             ^ in /home/aseopad/public_html/lib/db/postgres7.php on line 200
+[20-Feb-2018 18:48:45 UTC] No se puede ejecutar la consulta:
+SELECT n.id, e.nombre, to_char(n.hora_inicio,'YYYY/MM/DD') as fini, to_char(n.hora_inicio,'HH24:MI:SS') as hini, n.observaciones, case when hora_fin IS NULL then '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=\'javascript:cerrar('||n.id||')\'&gt;&lt;img alt=\'Cerrar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/check_green.png\' border=\'0\'&gt;&lt;/a&gt;' else '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;' end as editar 
+			FROM novedades n
+			LEFT JOIN mtto.equipos e ON e.id=n.id_equipo
+			WHERE n.id_centro IN (SELECT id_centro FROM personas_centros WHERE id_persona='1650')  AND hora_fin IS NULL AND n.esquema != 'mtto'
+			ORDER BY n.hora_inicio
+Error PostgreSQL :: ERROR:  syntax error at or near "javascript"
+LINE 1: ...iones, case when hora_fin IS NULL then '<a href=\'javascript...
+                                                             ^
+[20-Feb-2018 19:08:45 UTC] PHP Warning:  pg_exec(): Query failed: ERROR:  syntax error at or near &quot;javascript&quot;
+LINE 1: ...iones, case when hora_fin IS NULL then '&lt;a href=\'javascript...
+                                                             ^ in /home/aseopad/public_html/lib/db/postgres7.php on line 200
+[20-Feb-2018 19:08:45 UTC] No se puede ejecutar la consulta:
+SELECT n.id, e.nombre, to_char(n.hora_inicio,'YYYY/MM/DD') as fini, to_char(n.hora_inicio,'HH24:MI:SS') as hini, n.observaciones, case when hora_fin IS NULL then '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=\'javascript:cerrar('||n.id||')\'&gt;&lt;img alt=\'Cerrar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/check_green.png\' border=\'0\'&gt;&lt;/a&gt;' else '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;' end as editar 
+			FROM novedades n
+			LEFT JOIN mtto.equipos e ON e.id=n.id_equipo
+			WHERE n.id_centro IN (SELECT id_centro FROM personas_centros WHERE id_persona='1650')  AND hora_fin IS NULL AND n.esquema != 'mtto'
+			ORDER BY n.hora_inicio
+Error PostgreSQL :: ERROR:  syntax error at or near "javascript"
+LINE 1: ...iones, case when hora_fin IS NULL then '<a href=\'javascript...
+                                                             ^
+[20-Feb-2018 19:12:19 UTC] PHP Warning:  pg_exec(): Query failed: ERROR:  syntax error at or near &quot;javascript&quot;
+LINE 1: ...iones, case when hora_fin IS NULL then '&lt;a href=\'javascript...
+                                                             ^ in /home/aseopad/public_html/lib/db/postgres7.php on line 200
+[20-Feb-2018 19:12:19 UTC] No se puede ejecutar la consulta:
+SELECT n.id, e.nombre, to_char(n.hora_inicio,'YYYY/MM/DD') as fini, to_char(n.hora_inicio,'HH24:MI:SS') as hini, n.observaciones, case when hora_fin IS NULL then '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=\'javascript:cerrar('||n.id||')\'&gt;&lt;img alt=\'Cerrar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/check_green.png\' border=\'0\'&gt;&lt;/a&gt;' else '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;' end as editar 
+			FROM novedades n
+			LEFT JOIN mtto.equipos e ON e.id=n.id_equipo
+			WHERE n.id_centro IN (SELECT id_centro FROM personas_centros WHERE id_persona='1648')  AND hora_fin IS NULL AND n.esquema != 'mtto'
+			ORDER BY n.hora_inicio
+Error PostgreSQL :: ERROR:  syntax error at or near "javascript"
+LINE 1: ...iones, case when hora_fin IS NULL then '<a href=\'javascript...
+                                                             ^
+[20-Feb-2018 19:28:14 UTC] PHP Warning:  pg_exec(): Query failed: ERROR:  syntax error at or near &quot;javascript&quot;
+LINE 1: ...iones, case when hora_fin IS NULL then '&lt;a href=\'javascript...
+                                                             ^ in /home/aseopad/public_html/lib/db/postgres7.php on line 200
+[20-Feb-2018 19:28:14 UTC] No se puede ejecutar la consulta:
+SELECT n.id, e.nombre, to_char(n.hora_inicio,'YYYY/MM/DD') as fini, to_char(n.hora_inicio,'HH24:MI:SS') as hini, n.observaciones, case when hora_fin IS NULL then '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=\'javascript:cerrar('||n.id||')\'&gt;&lt;img alt=\'Cerrar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/check_green.png\' border=\'0\'&gt;&lt;/a&gt;' else '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;' end as editar 
+			FROM novedades n
+			LEFT JOIN mtto.equipos e ON e.id=n.id_equipo
+			WHERE n.id_centro IN (SELECT id_centro FROM personas_centros WHERE id_persona='1648')  AND hora_fin IS NULL AND n.esquema != 'mtto'
+			ORDER BY n.hora_inicio
+Error PostgreSQL :: ERROR:  syntax error at or near "javascript"
+LINE 1: ...iones, case when hora_fin IS NULL then '<a href=\'javascript...
+                                                             ^
+[20-Feb-2018 19:29:29 UTC] PHP Warning:  pg_exec(): Query failed: ERROR:  syntax error at or near &quot;javascript&quot;
+LINE 1: ...iones, case when hora_fin IS NULL then '&lt;a href=\'javascript...
+                                                             ^ in /home/aseopad/public_html/lib/db/postgres7.php on line 200
+[20-Feb-2018 19:29:29 UTC] No se puede ejecutar la consulta:
+SELECT n.id, e.nombre, to_char(n.hora_inicio,'YYYY/MM/DD') as fini, to_char(n.hora_inicio,'HH24:MI:SS') as hini, n.observaciones, case when hora_fin IS NULL then '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=\'javascript:cerrar('||n.id||')\'&gt;&lt;img alt=\'Cerrar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/check_green.png\' border=\'0\'&gt;&lt;/a&gt;' else '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;' end as editar 
+			FROM novedades n
+			LEFT JOIN mtto.equipos e ON e.id=n.id_equipo
+			WHERE n.id_centro IN (SELECT id_centro FROM personas_centros WHERE id_persona='1648')  AND hora_fin IS NULL AND n.esquema != 'mtto'
+			ORDER BY n.hora_inicio
+Error PostgreSQL :: ERROR:  syntax error at or near "javascript"
+LINE 1: ...iones, case when hora_fin IS NULL then '<a href=\'javascript...
+                                                             ^
+[20-Feb-2018 19:30:03 UTC] PHP Warning:  pg_exec(): Query failed: ERROR:  syntax error at or near &quot;javascript&quot;
+LINE 1: ...iones, case when hora_fin IS NULL then '&lt;a href=\'javascript...
+                                                             ^ in /home/aseopad/public_html/lib/db/postgres7.php on line 200
+[20-Feb-2018 19:30:03 UTC] No se puede ejecutar la consulta:
+SELECT n.id, e.nombre, to_char(n.hora_inicio,'YYYY/MM/DD') as fini, to_char(n.hora_inicio,'HH24:MI:SS') as hini, n.observaciones, case when hora_fin IS NULL then '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=\'javascript:cerrar('||n.id||')\'&gt;&lt;img alt=\'Cerrar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/check_green.png\' border=\'0\'&gt;&lt;/a&gt;' else '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;' end as editar 
+			FROM novedades n
+			LEFT JOIN mtto.equipos e ON e.id=n.id_equipo
+			WHERE n.id_centro IN (SELECT id_centro FROM personas_centros WHERE id_persona='1648')  AND hora_fin IS NULL AND n.esquema != 'mtto'
+			ORDER BY n.hora_inicio
+Error PostgreSQL :: ERROR:  syntax error at or near "javascript"
+LINE 1: ...iones, case when hora_fin IS NULL then '<a href=\'javascript...
+                                                             ^
+[20-Feb-2018 19:31:57 UTC] PHP Warning:  pg_exec(): Query failed: ERROR:  syntax error at or near &quot;javascript&quot;
+LINE 1: ...ciones, case when hora_fin IS NULL then '&lt;a href='javascript...
+                                                             ^ in /home/aseopad/public_html/lib/db/postgres7.php on line 200
+[20-Feb-2018 19:31:57 UTC] No se puede ejecutar la consulta:
+SELECT n.id, e.nombre, to_char(n.hora_inicio,'YYYY/MM/DD') as fini, to_char(n.hora_inicio,'HH24:MI:SS') as hini, n.observaciones, case when hora_fin IS NULL then '&lt;a href='javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=\'javascript:cerrar('||n.id||')\'&gt;&lt;img alt=\'Cerrar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/check_green.png\' border=\'0\'&gt;&lt;/a&gt;' else '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;' end as editar 
+			FROM novedades n
+			LEFT JOIN mtto.equipos e ON e.id=n.id_equipo
+			WHERE n.id_centro IN (SELECT id_centro FROM personas_centros WHERE id_persona='1648')  AND hora_fin IS NULL AND n.esquema != 'mtto'
+			ORDER BY n.hora_inicio
+Error PostgreSQL :: ERROR:  syntax error at or near "javascript"
+LINE 1: ...ciones, case when hora_fin IS NULL then '<a href='javascript...
+                                                             ^
+[20-Feb-2018 19:32:15 UTC] PHP Warning:  pg_exec(): Query failed: ERROR:  syntax error at or near &quot;alt&quot;
+LINE 1: ...en '&lt;a href=javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Edit...
+                                                             ^ in /home/aseopad/public_html/lib/db/postgres7.php on line 200
+[20-Feb-2018 19:32:15 UTC] No se puede ejecutar la consulta:
+SELECT n.id, e.nombre, to_char(n.hora_inicio,'YYYY/MM/DD') as fini, to_char(n.hora_inicio,'HH24:MI:SS') as hini, n.observaciones, case when hora_fin IS NULL then '&lt;a href=javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=\'javascript:cerrar('||n.id||')\'&gt;&lt;img alt=\'Cerrar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/check_green.png\' border=\'0\'&gt;&lt;/a&gt;' else '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;' end as editar 
+			FROM novedades n
+			LEFT JOIN mtto.equipos e ON e.id=n.id_equipo
+			WHERE n.id_centro IN (SELECT id_centro FROM personas_centros WHERE id_persona='1648')  AND hora_fin IS NULL AND n.esquema != 'mtto'
+			ORDER BY n.hora_inicio
+Error PostgreSQL :: ERROR:  syntax error at or near "alt"
+LINE 1: ...en '<a href=javascript:edicion('||n.id||')\'><img alt=\'Edit...
+                                                             ^
+[20-Feb-2018 19:32:38 UTC] PHP Warning:  pg_exec(): Query failed: ERROR:  syntax error at or near &quot;javascript&quot;
+LINE 1: ...iones, case when hora_fin IS NULL then '&lt;a href=\'javascript...
+                                                             ^ in /home/aseopad/public_html/lib/db/postgres7.php on line 200
+[20-Feb-2018 19:32:38 UTC] No se puede ejecutar la consulta:
+SELECT n.id, e.nombre, to_char(n.hora_inicio,'YYYY/MM/DD') as fini, to_char(n.hora_inicio,'HH24:MI:SS') as hini, n.observaciones, case when hora_fin IS NULL then '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=\'javascript:cerrar('||n.id||')\'&gt;&lt;img alt=\'Cerrar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/check_green.png\' border=\'0\'&gt;&lt;/a&gt;' else '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=\'0\'&gt;&lt;/a&gt;' end as editar 
+			FROM novedades n
+			LEFT JOIN mtto.equipos e ON e.id=n.id_equipo
+			WHERE n.id_centro IN (SELECT id_centro FROM personas_centros WHERE id_persona='1648')  AND hora_fin IS NULL AND n.esquema != 'mtto'
+			ORDER BY n.hora_inicio
+Error PostgreSQL :: ERROR:  syntax error at or near "javascript"
+LINE 1: ...iones, case when hora_fin IS NULL then '<a href=\'javascript...
+                                                             ^
+[20-Feb-2018 19:34:33 UTC] PHP Warning:  pg_exec(): Query failed: ERROR:  syntax error at or near &quot;javascript&quot;
+LINE 1: ...iones, case when hora_fin IS NULL then '&lt;a href=\'javascript...
+                                                             ^ in /home/aseopad/public_html/lib/db/postgres7.php on line 200
+[20-Feb-2018 19:34:33 UTC] No se puede ejecutar la consulta:
+SELECT n.id, e.nombre, to_char(n.hora_inicio,'YYYY/MM/DD') as fini, to_char(n.hora_inicio,'HH24:MI:SS') as hini, n.observaciones, case when hora_fin IS NULL then '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=0&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=\'javascript:cerrar('||n.id||')\'&gt;&lt;img alt=\'Cerrar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/check_green.png\' border=0&gt;&lt;/a&gt;' else '&lt;a href=\'javascript:edicion('||n.id||')\'&gt;&lt;img alt=\'Editar\' src=\'http://bogota.promoambientaldistrito.com/admin/iconos/transparente/iconoeditar.gif\' border=0&gt;&lt;/a&gt;' end as editar 
+			FROM novedades n
+			LEFT JOIN mtto.equipos e ON e.id=n.id_equipo
+			WHERE n.id_centro IN (SELECT id_centro FROM personas_centros WHERE id_persona='1648')  AND hora_fin IS NULL AND n.esquema != 'mtto'
+			ORDER BY n.hora_inicio
+Error PostgreSQL :: ERROR:  syntax error at or near "javascript"
+LINE 1: ...iones, case when hora_fin IS NULL then '<a href=\'javascript...
+                                                             ^
+[20-Feb-2018 19:38:19 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[20-Feb-2018 19:38:19 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[20-Feb-2018 21:47:16 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[20-Feb-2018 21:47:16 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[20-Feb-2018 21:47:19 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[20-Feb-2018 21:47:19 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[20-Feb-2018 22:04:58 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[20-Feb-2018 22:04:58 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[20-Feb-2018 22:27:06 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[20-Feb-2018 22:27:06 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[21-Feb-2018 16:06:16 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[21-Feb-2018 16:06:16 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[21-Feb-2018 16:11:14 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[21-Feb-2018 16:11:14 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[21-Feb-2018 17:17:01 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[21-Feb-2018 17:17:01 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[21-Feb-2018 17:30:48 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[21-Feb-2018 17:30:48 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[21-Feb-2018 18:23:02 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[21-Feb-2018 18:23:02 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[21-Feb-2018 18:30:28 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[21-Feb-2018 18:30:28 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[21-Feb-2018 18:30:32 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[21-Feb-2018 18:30:32 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[21-Feb-2018 19:08:43 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[21-Feb-2018 19:08:43 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[21-Feb-2018 19:13:38 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[21-Feb-2018 19:13:38 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[21-Feb-2018 19:26:38 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[21-Feb-2018 19:26:38 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[21-Feb-2018 19:51:14 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[21-Feb-2018 19:51:15 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[21-Feb-2018 20:14:45 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[21-Feb-2018 20:14:45 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[21-Feb-2018 20:41:11 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[21-Feb-2018 20:41:11 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[21-Feb-2018 21:29:10 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[21-Feb-2018 21:29:10 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[22-Feb-2018 13:24:55 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[22-Feb-2018 13:24:55 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[23-Feb-2018 20:37:50 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[23-Feb-2018 20:37:50 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[28-Feb-2018 17:58:51 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[28-Feb-2018 17:58:51 UTC] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[01-Mar-2018 13:57:00 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[01-Mar-2018 13:57:00 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[02-Mar-2018 09:51:23 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[02-Mar-2018 09:51:23 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[02-Mar-2018 09:51:30 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[02-Mar-2018 09:51:30 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[02-Mar-2018 09:52:44 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[02-Mar-2018 09:52:44 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[05-Mar-2018 13:15:04 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[05-Mar-2018 13:15:04 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[05-Mar-2018 13:15:07 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[05-Mar-2018 13:15:07 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[05-Mar-2018 13:15:07 America/Bogota] PHP Strict Standards:  Resource ID#13 used as offset, casting to integer (13) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[05-Mar-2018 13:15:07 America/Bogota] PHP Strict Standards:  Resource ID#13 used as offset, casting to integer (13) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[05-Mar-2018 13:15:07 America/Bogota] PHP Strict Standards:  Resource ID#14 used as offset, casting to integer (14) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[05-Mar-2018 13:15:07 America/Bogota] PHP Strict Standards:  Resource ID#14 used as offset, casting to integer (14) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[05-Mar-2018 13:15:07 America/Bogota] PHP Strict Standards:  Resource ID#15 used as offset, casting to integer (15) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[05-Mar-2018 13:15:07 America/Bogota] PHP Strict Standards:  Resource ID#15 used as offset, casting to integer (15) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[05-Mar-2018 13:15:07 America/Bogota] PHP Strict Standards:  Resource ID#16 used as offset, casting to integer (16) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[05-Mar-2018 13:15:07 America/Bogota] PHP Strict Standards:  Resource ID#16 used as offset, casting to integer (16) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[09-Mar-2018 18:03:19 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[09-Mar-2018 18:03:19 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[12-Mar-2018 10:00:56 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[12-Mar-2018 10:00:56 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[12-Mar-2018 10:12:34 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[12-Mar-2018 10:12:34 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[12-Mar-2018 21:45:47 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[12-Mar-2018 21:45:47 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[12-Mar-2018 23:30:06 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[12-Mar-2018 23:30:06 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[12-Mar-2018 23:47:00 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[12-Mar-2018 23:47:00 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[17-Mar-2018 13:11:19 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[17-Mar-2018 13:11:19 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272
+[20-Mar-2018 08:17:33 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 271
+[20-Mar-2018 08:17:33 America/Bogota] PHP Strict Standards:  Resource ID#12 used as offset, casting to integer (12) in /home/aseopad/public_html/lib/db/postgres7.php on line 272

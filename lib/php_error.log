@@ -1,0 +1,30 @@
+[01-Mar-2018 10:57:09 America/Bogota] SELECT v.id, v.codigo||'/'||v.placa || CASE WHEN (select count(o.id) FROM mtto.ordenes_trabajo o WHERE o.id_equipo=e.id AND o.fecha_planeada::date = '2018-03-01') != 0 then '(Mantenimiento Programado)' else '' end as nombre
+		FROM vehiculos v
+	 	LEFT JOIN mtto.equipos e ON v.id=e.id_vehiculo	
+		LEFT JOIN tipos_vehiculos_servicios tp ON tp.id_tipo_vehiculo=v.id_tipo_vehiculo
+		WHERE v.id_centro = '15' AND tp.id_servicio='1'  and v.id_estado<>4
+		ORDER BY v.codigo,v.placa
+[12-Mar-2018 10:04:38 America/Bogota] SELECT v.id, v.codigo||'/'||v.placa || CASE WHEN (select count(o.id) FROM mtto.ordenes_trabajo o WHERE o.id_equipo=e.id AND o.fecha_planeada::date = '2018-03-12') != 0 then '(Mantenimiento Programado)' else '' end as nombre
+		FROM vehiculos v
+	 	LEFT JOIN mtto.equipos e ON v.id=e.id_vehiculo	
+		LEFT JOIN tipos_vehiculos_servicios tp ON tp.id_tipo_vehiculo=v.id_tipo_vehiculo
+		WHERE v.id_centro = '15' AND tp.id_servicio='1'  and v.id_estado<>4
+		ORDER BY v.codigo,v.placa
+[12-Mar-2018 10:10:14 America/Bogota] SELECT v.id, v.codigo||'/'||v.placa || CASE WHEN (select count(o.id) FROM mtto.ordenes_trabajo o WHERE o.id_equipo=e.id AND o.fecha_planeada::date = '2018-03-12') != 0 then '(Mantenimiento Programado)' else '' end as nombre
+		FROM vehiculos v
+	 	LEFT JOIN mtto.equipos e ON v.id=e.id_vehiculo	
+		LEFT JOIN tipos_vehiculos_servicios tp ON tp.id_tipo_vehiculo=v.id_tipo_vehiculo
+		WHERE v.id_centro = '15' AND tp.id_servicio='1'  and v.id_estado<>4
+		ORDER BY v.codigo,v.placa
+[17-Mar-2018 13:17:58 America/Bogota] SELECT v.id, v.codigo||'/'||v.placa || CASE WHEN (select count(o.id) FROM mtto.ordenes_trabajo o WHERE o.id_equipo=e.id AND o.fecha_planeada::date = '2018-03-17') != 0 then '(Mantenimiento Programado)' else '' end as nombre
+		FROM vehiculos v
+	 	LEFT JOIN mtto.equipos e ON v.id=e.id_vehiculo	
+		LEFT JOIN tipos_vehiculos_servicios tp ON tp.id_tipo_vehiculo=v.id_tipo_vehiculo
+		WHERE v.id_centro = '15' AND tp.id_servicio='1'  and v.id_estado<>4
+		ORDER BY v.codigo,v.placa
+[19-Mar-2018 09:25:50 America/Bogota] SELECT v.id, v.codigo||'/'||v.placa || CASE WHEN (select count(o.id) FROM mtto.ordenes_trabajo o WHERE o.id_equipo=e.id AND o.fecha_planeada::date = '2018-03-19') != 0 then '(Mantenimiento Programado)' else '' end as nombre
+		FROM vehiculos v
+	 	LEFT JOIN mtto.equipos e ON v.id=e.id_vehiculo	
+		LEFT JOIN tipos_vehiculos_servicios tp ON tp.id_tipo_vehiculo=v.id_tipo_vehiculo
+		WHERE v.id_centro = '15' AND tp.id_servicio='1'  and v.id_estado<>4
+		ORDER BY v.codigo,v.placa

@@ -1,0 +1,194 @@
+MAP
+OUTPUTFORMAT
+#    NAME agg
+    NAME png
+#    DRIVER AGG/PNG
+		DRIVER "GD/PNG"
+    IMAGEMODE RGBA
+#    IMAGEMODE PC256
+    FORMATOPTION "INTERLACE=false"
+    MIMETYPE "image/png"
+#		FORMATOPTION "TRANSPARENT=ON"
+		TRANSPARENT ON
+		EXTENSION "png"
+END
+TRANSPARENT ON
+#IMAGECOLOR 0 0 0
+FONTSET "fonts.lst"
+SYMBOLSET "symbol.sym"
+#IMAGETYPE agg
+IMAGETYPE png
+#MAXSIZE 4000
+SIZE 800 800
+#EXTENT 47586 1621243 1197769 2679357
+#EXTENT 16805492 -4049385 16857351 -3975830
+#EXTENT -9097931 -470800.5 -7443962 1503834.25
+#EXTENT -85 -4 -63 18
+EXTENT -8538033 372738 -8499050 399032
+#UNITS dd
+UNITS METERS
+#IMAGECOLOR "#B3C6D4"
+#IMAGECOLOR "#FAFAD2"
+WEB
+    METADATA
+        wms_srs "EPSG:900913"
+        labelcache_map_edge_buffer "-10"
+        wms_title "pa"
+    END
+END
+DEBUG 0
+CONFIG "PROJ_LIB" "/var/www/html/osm"
+CONFIG "MS_ERRORFILE" "stderr"
+PROJECTION
+"init=epsg:900913"
+END
+
+  LAYER
+		STATUS ON
+    NAME "clientes"
+		PROCESSING "LABEL_NO_CLIP=ON"
+    CONNECTIONTYPE postgis
+    CONNECTION "user=promoambiental password=qazse dbname=promoambiental host=localhost"
+ # 	DATA "the_geom from (select id,'-'::text as simbolo,codigo,id_categoria,ST_Transform(the_geom,900913) as the_geom from clientes ORDER BY id LIMIT 1000) as foo using unique id using srid=900913"
+  	DATA "the_geom from (select id,'-'::text as simbolo,codigo,id_categoria,ST_Transform(the_geom,900913) as the_geom from clientes) as foo using unique id using srid=900913"
+#    TYPE POINT
+    TYPE ANNOTATION
+    LABELITEM 'simbolo'
+    CLASS
+      NAME 'UNO'
+      EXPRESSION ([id_categoria] = 1)
+      LABEL
+        TYPE TRUETYPE
+        FORCE TRUE
+        FONT cmttra
+        ANTIALIAS TRUE
+        COLOR 0 0 215
+        OUTLINECOLOR 0 0 0
+        SIZE 6
+        OFFSET -1 0
+      END
+    END
+    CLASS
+      NAME 'DOS'
+      EXPRESSION ([id_categoria] = 2)
+      LABEL
+        TYPE TRUETYPE
+        FORCE TRUE
+        FONT cmttra
+        ANTIALIAS TRUE
+        COLOR 0 153 255
+        OUTLINECOLOR 0 0 0
+        SIZE 6
+        OFFSET -1 0
+      END
+    END
+	END
+
+  LAYER
+		STATUS ON
+    NAME "clientesxcentro"
+		PROCESSING "LABEL_NO_CLIP=ON"
+    CONNECTIONTYPE postgis
+    CONNECTION "user=promoambiental password=qazse dbname=promoambiental host=localhost"
+  	DATA "the_geom from (select id,'-'::text as simbolo,codigo,id_centro,ST_Transform(the_geom,900913) as the_geom from clientes) as foo using unique id using srid=900913"
+    TYPE ANNOTATION
+    LABELITEM 'simbolo'
+    CLASS
+      NAME 'UNO'
+      EXPRESSION ([id_centro] = 1)
+      LABEL
+        TYPE TRUETYPE
+        FORCE TRUE
+        FONT cmttra
+        ANTIALIAS TRUE
+        COLOR 228 120 16
+        OUTLINECOLOR 0 0 0
+        SIZE 6
+        OFFSET -1 0
+      END
+    END
+    CLASS
+      NAME 'DOS'
+      EXPRESSION ([id_centro] = 2)
+      LABEL
+        TYPE TRUETYPE
+        FORCE TRUE
+        FONT cmttra
+        ANTIALIAS TRUE
+        COLOR 0 153 255
+        OUTLINECOLOR 0 0 0
+        SIZE 6
+        OFFSET -1 0
+      END
+    END
+	END
+
+  LAYER
+		STATUS ON
+    NAME "clientesxunidades"
+		PROCESSING "LABEL_NO_CLIP=ON"
+    CONNECTIONTYPE postgis
+    CONNECTION "user=promoambiental password=qazse dbname=promoambiental host=localhost"
+  	DATA "the_geom from (select id,'-'::text as simbolo,codigo,unidadeshab,ST_Transform(the_geom,900913) as the_geom from clientes) as foo using unique id using srid=900913"
+    TYPE ANNOTATION
+    LABELITEM 'simbolo'
+    CLASS
+      NAME 'UNO'
+      EXPRESSION ([unidadeshab] = 1)
+      LABEL
+        TYPE TRUETYPE
+        FORCE TRUE
+        FONT cmttra
+        ANTIALIAS TRUE
+        COLOR 128 0 0
+        OUTLINECOLOR 0 0 0
+        SIZE 6
+        OFFSET -1 0
+      END
+    END
+    CLASS
+      NAME 'DOS'
+      EXPRESSION ([unidadeshab] = 2)
+      LABEL
+        TYPE TRUETYPE
+        FORCE TRUE
+        FONT cmttra
+        ANTIALIAS TRUE
+        COLOR 0 128 0
+        OUTLINECOLOR 0 0 0
+        SIZE 6
+        OFFSET -1 0
+      END
+    END
+    CLASS
+      NAME 'TRES'
+      EXPRESSION ([unidadeshab] = 3)
+      LABEL
+        TYPE TRUETYPE
+        FORCE TRUE
+        FONT cmttra
+        ANTIALIAS TRUE
+        COLOR 0 0 128
+        OUTLINECOLOR 0 0 0
+        SIZE 6
+        OFFSET -1 0
+      END
+    END
+    CLASS
+      NAME 'MAS'
+      EXPRESSION ([unidadeshab] > 3)
+      LABEL
+        TYPE TRUETYPE
+        FORCE TRUE
+        FONT cmttra
+        ANTIALIAS TRUE
+        COLOR 128 0 128
+        OUTLINECOLOR 0 0 0
+        SIZE 6
+        OFFSET -1 0
+      END
+    END
+	END
+
+END
+

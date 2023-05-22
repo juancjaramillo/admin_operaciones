@@ -1,0 +1,38 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.vticker-min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#news-container").vTicker({ 
+		speed: 500,
+		pause: 2000,
+		animation: 'fade',
+		mousePause: true,
+		showItems: 3
+	});
+});
+var contador=0;
+function traer(){
+	var ul=document.getElementById('mainUL');
+	var li = document.createElement("li");
+	li.innerHTML="Contenido # " + contador;
+	ul.appendChild(li);
+	contador++;
+}
+</script>
+</head>
+<body>
+</script>
+<h3>Demo1</h3>
+<div id="news-container">
+<ul id="mainUL">
+<li>News content1</li>
+<li>News content2</li>
+</ul>
+
+</div>
+<input type="button" value="ASD" onClick="traer()">
+</body>
+</html>
+
